@@ -6,13 +6,14 @@ export default {
     ],
     theme: {
       extend: {
-        backgroundImage: {
-        'radial-custom': 'radial-gradient(74.8% 74.8% at 34.6% 25.2%, #4D4C4C 0%, #3A3A3A 100%)',
-      },boxShadow: {
-        'custom-white': '0px 6px 12px 0px #FFFFFF40',
-      },
+        // fontFamily: {
+        //   inter: ['Inter', 'sans-serif'],
+        // },
+        colors: {
+          brand: "#ff6600",
+        }
       },
     },
     plugins: [],
   };
-  
+   
