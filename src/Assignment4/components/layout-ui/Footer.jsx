@@ -2,7 +2,7 @@ import React from "react";
 
 import vector1 from "../../../assets/Images/vector1.png"
  import vector2 from "../../../assets/Images/vector2.png"
- import vector3 from "../../../assets/Images/vector3.png"
+ import vector3 from "../../../assets/Images/Vector3.png"
 import vector4 from "../../../assets/Images/vector4.png"
  import Be from "../../../assets/Images/Behance.png"
 
