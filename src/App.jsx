@@ -36,10 +36,23 @@ const App = () => {
 
   return (
     <div className="max-w-[1900px] mx-auto">
+     
       <RouterProvider router={router} />
     </div>
   );
 };
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
 

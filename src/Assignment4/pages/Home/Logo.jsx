@@ -8,8 +8,7 @@ import Awwward from "../../../assets/Images/Awwwards.png";
 const Logo = () => {
   return (
     <div className="w-full flex justify-center py-14">
-      {/* Large Screen Layout */}
-      {/* <div className="hidden md:flex w-[80rem] justify-between items-center"> */}
+
       <div className="hidden md:flex w-[80rem] justify-between items-center border-y-2 border-[#000000] py-14 px-10">
 
         <img src={Google} alt="google" className="h-[2rem] w-auto" />
@@ -19,7 +18,6 @@ const Logo = () => {
         <img src={Awwward} alt="awwward" className="h-[2rem] w-auto" />
       </div>
 
-      {/* Mobile Layout */}
       <div className="md:hidden grid grid-cols-2 gap-y-14 gap-x-14 justify-items-center w-full max-w-xs border-y-2 border-[#000000]">
 
         <img src={Google} alt="google" className="h-[2rem] w-auto" />

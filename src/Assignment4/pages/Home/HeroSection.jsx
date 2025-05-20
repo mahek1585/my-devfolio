@@ -22,32 +22,3 @@ const HeroSection = () => {
 
 export default HeroSection
 
-
-
-
-// import React from 'react'
-// import Heroimage from "../../../assets/Images/hero-image.jpg";
-
-// const HeroSection = () => {
-
-//   return (
-//   <section className="flex gap-7 justify-center items-center">
-//     <div className="hero-content flex-1 max-w-[34rem] flex flex-col gap-10 ">
-//         <p className="title text-xl font-semibold ">Branding | Image making </p>
-//         <h1 className='font-semibold text-[5rem] leading-[5rem]'>My awesome portfolio</h1>
-//         <p className="lead">And I made it myself! Yes. In Figma with Anima</p>
-//     </div>
-//     <div className="hero-image">
-//         <img src={Heroimage} alt="Hero-image" className="w-[30rem]" />
-//     </div>
-
-//   </section>
-
-//   )
-
-// }
-
-// export default HeroSection
-
-
-

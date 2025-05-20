@@ -9,7 +9,7 @@ import vector4 from "../../../assets/Images/vector4.png"
 
 const Footer = () => {
   return (
-    <footer className="px-14">
+    <footer className="px-14 pb-4">
       <div  id ="contact" className=" flex flex-col md:flex-row gap-20 md:gap-[15rem] justify-between border-t border-t-black pt-16">
         <div className="">
           <h2 className="font-semibold text-3xl mb-10">Let’s work together</h2>
