@@ -1,7 +1,7 @@
 import React from 'react';
 import grocerry from "../../../assets/Images/grocerry.png";
 import pokemon from "../../../assets/Images/pokemon.png";
-import gotMe from "../../../assets/Images/gotMe.png";
+import clickcount from "../../../assets/Images/clickcount.png";
 import girl from "../../../assets/Images/girl.png";
 import lotalove from "../../../assets/Images/lotalove.png";
 import pressure from "../../../assets/Images/pressure.png";
@@ -17,7 +17,11 @@ const workItems = [
     reponame: "Pokemon" ,
     link : "https://github.com/mahek1585/React-Projects/tree/Pokemon/src "
   },
-  { image: gotMe, title: "You Really Got Me", artist: "The Kinks" },
+  { image: clickcount, 
+    title: "ClickCount Application",
+    reponame: "ClickCount",
+    link: "https://github.com/mahek1585/React-Projects/tree/assignment3"
+    },
   { image: girl, title: "American Girl", artist: "Tom Petty" },
   { image: lotalove, title: "Whole Lotta Love", artist: "Led Zeppelin" },
   { image: pressure, title: "Under Pressure", artist: "Queen" },
