@@ -6,9 +6,9 @@ const HeroSection = () => {
   return (
   <section className="py-12 md:py-24 flex flex-col md:flex-row gap-16 md:gap-7 justify-center items-center">
     <div className="text-center md:text-left flex-1 max-w-[34rem] hero-content flex flex-col gap-5 md:gap-10">
-        <p className="title text-xl font-semibold">Branding | Image making </p>
-        <h1 className="font-semibold text-[2.5rem] md:text-[5rem] leading-[100%] md:leading-[5rem]">My awesome portfolio</h1>
-        <p className="lead">And I made it myself! Yes. In Figma with Anima</p>
+        <p className="title text-xl font-semibold">Web Developer | Programmer </p>
+        <h1 className="font-semibold text-[2.5rem] md:text-[5rem] leading-[100%] md:leading-[5rem]">Web Development Enthusiast</h1>
+        <p className="lead"> A passionate web developer building modern websites with React, JavaScript, and PHP. This portfolio showcases my latest work!</p>
     </div>
     <div className="hero-image">
         <img src={Heroimage} alt="Hero-image" className="w-[30rem]" />

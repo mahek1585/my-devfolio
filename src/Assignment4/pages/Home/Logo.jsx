@@ -20,12 +20,12 @@ const Logo = () => {
 
       <div className="md:hidden grid grid-cols-2 gap-y-14 gap-x-14 justify-items-center w-full max-w-xs border-y-2 border-[#000000]">
 
-        <img src={Google} alt="google" className="h-[2rem] w-auto" />
-        <img src={Behance} alt="behance" className="h-[2rem] w-auto" />
+        <img src={Google} alt="google" className="h-[2rem] w-auto pt-2" />
+        <img src={Behance} alt="behance" className="h-[2rem] w-auto pt-2" />
         <img src={Dribble} alt="dribble" className="h-[2rem] w-auto" />
         <img src={Apple} alt="apple" className="h-[2rem] w-auto" />
         <div className="col-span-2 flex justify-center">
-          <img src={Awwward} alt="awwward" className="h-[2rem] w-auto" />
+          <img src={Awwward} alt="awwward" className="h-[2rem] w-auto pb-2" />
         </div>
       </div>
     </div>

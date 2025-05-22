@@ -5,28 +5,28 @@ const Body = () => {
     <section className="-mt-12 py-28 px-4 sm:px-6 md:px-12 lg:px-24">
       <div className="max-w-5xl mx-auto">
         <h2 className="font-medium text-2xl leading-9 text-[#2B2B2B] pb-16">
-          When I was 5, I got adbucted by a unicorn family. When they returned me to earth, 
-          I joined a designer school. But, fo’ real, what I learned with my kidnaptive family really gave an edge 
-          to my creative language.
+            I’m a passionate web developer with a creative eye and a strong foundation in front-end technologies. 
+            I believe great design and functionality go hand-in-hand to create memorable digital experiences.
         </h2>
 
         <p className="font-semibold text-[1rem] leading-6 text-[#F6DCE9] bg-[#009379] px-2 py-1 inline-block mb-4">
-          Being a human is way too complicated. Time to be a unicorn.
+          Design with logic. Code with creativity.
         </p>
 
         <p className="text-[1rem] leading-6 text-[#2B2B2B] mb-4">
-          Try it and you’ll see. Then your Figma files are just gonna fly in color, glitter, interactions and autolayout.
+          I specialize in crafting responsive websites using React, Tailwind CSS, JavaScript, and modern tools. 
+          My goal is to build user-friendly interfaces that not only look good but also function smoothly across all devices.
         </p>
 
         <p className="font-semibold text-[1rem] leading-6 text-[#F6DCE9] bg-[#009379] px-2 py-1 inline-block mb-4">
-          Also, grow a beard. Check my bio if that is not clear.
+          Every project is an opportunity to learn and innovate.
         </p>
 
         <p className="text-[1rem] leading-6 text-[#2B2B2B]">
-          Available for projects, from Monday to Tuesday, mainly between 14 and 16. (Unless there is a unicorn race on TV - DUH - 
-          in that case, come back another day).
+          I’m open to freelance projects, internships, and collaborations. Whether it’s a portfolio website, a startup idea, or a
+           redesign, I’m excited to contribute with passion and precision.
           <br />
-          Projects include, RocknRoll covers, furniture refurbishing, Unicorn potty training and more.
+           Let’s connect and bring your ideas to life!
         </p>
       </div>
     </section>

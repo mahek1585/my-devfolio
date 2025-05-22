@@ -14,9 +14,9 @@ const Footer = () => {
         <div className="">
           <h2 className="font-semibold text-3xl mb-10">Let’s work together</h2>
           <p className="mb-14">
-            This is a template Figma file, turned into code using Anima. Learn
-            more at AnimaApp.com This is a template Figma file, turned into code
-            using Anima. Learn more at AnimaApp.com
+            I'm always excited to collaborate on interesting projects or internships. 
+            Whether it's web development or design, feel free to reach out and let's build something great together.
+
           </p>
            <div className="flex gap-4">
                      <img src={vector1} className="w-9 h-9 cursor-pointer" alt="vector1" />
