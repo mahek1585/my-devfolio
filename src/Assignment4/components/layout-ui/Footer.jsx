@@ -23,10 +23,10 @@ const Footer = () => {
                      <img src={vector2} className="w-9 h-9 cursor-pointer" alt="vector2" /> 
                      <img src={vector3} className="w-9 h-9 cursor-pointer" alt="vector3" />
                      <img src={vector4} className="w-9 h-9 cursor-pointer" alt="vector4" /> 
-                    <img src={Be} className="w-9 h-9 cursor-pointer" alt="vector5" /> 
+                     <img src={Be} className="w-9 h-9 cursor-pointer" alt="vector5" /> 
                  </div>
         </div>
-        <form className="flex flex-1 items-start min-w-[32rem]">
+        <form className="flex flex-1 items-start md:min-w-[32rem]">
           <div className="flex flex-1 flex-col gap-5 ">
             <input
               type="text"
@@ -59,3 +59,7 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+

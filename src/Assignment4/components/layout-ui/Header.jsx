@@ -57,6 +57,8 @@ const Header = () => {
   };
 
   return (
+    <>
+    <div className="overflow-x-hidden">
     <header className="flex justify-between px-12 py-6 sticky top-0 bg-white">
       <ScrollToTop />
       <div className="brand font-semibold text-xl">Logo</div>
@@ -80,7 +82,12 @@ const Header = () => {
         alt="Menu"
       />
     </header>
+    </div>
+    </>
   );
 };
 
 export default Header;
+
+
+

@@ -4,6 +4,7 @@
 body {
   font-family: "Epilogue";
   color: #2d2d2d;
+   overflow-x: hidden;
 }
 * {
   outline: none;
