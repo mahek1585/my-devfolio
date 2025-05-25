@@ -2,9 +2,8 @@ import React from 'react';
 import grocerry from "../../../assets/Images/grocerry.png";
 import pokemon from "../../../assets/Images/pokemon.png";
 import clickcount from "../../../assets/Images/clickcount.png";
-import girl from "../../../assets/Images/girl.png";
-import lotalove from "../../../assets/Images/lotalove.png";
-import pressure from "../../../assets/Images/pressure.png";
+import chefs from "../../../assets/Images/chefs-delight2.png";
+import amazon from "../../../assets/Images/amazon.png";
 
 const workItems = [
   { image: grocerry, 
@@ -22,9 +21,16 @@ const workItems = [
     reponame: "ClickCount",
     link: "https://github.com/mahek1585/React-Projects/tree/assignment3"
     },
-  { image: girl, title: "American Girl", artist: "Tom Petty" },
-  { image: lotalove, title: "Whole Lotta Love", artist: "Led Zeppelin" },
-  { image: pressure, title: "Under Pressure", artist: "Queen" },
+  { image: chefs, 
+    title: "Chef's Delight",
+    reponame:"FoodieHub", 
+    link: "https://github.com/mahek1585/TailwindDemo/tree/MahekFe/src" 
+  },
+   { image: amazon, 
+    title: "Amazon Home page",
+    reponame:"Amazon", 
+    link: "https://github.com/mahek1585/AmazonHomePage"
+   },
 ];
 
 const LatestWork = () => {
@@ -35,7 +41,7 @@ const LatestWork = () => {
       <div className="flex flex-col gap-10 pt-[3.8rem] sm:flex-row sm:flex-wrap sm:justify-center lg:justify-between">
         {workItems.map((item, index) => (
           <div key={index} className="w-[19rem] h-[25.4rem] mx-auto">
-            <img src={item.image} alt={item.title} className="h-[315px] mx-auto w-full object-cove" />
+            <img src={item.image} alt={item.title} className="h-[315px] mx-auto w-full object-cover" />
             <p className="text-[1.3rem] font-semibold pt-6 leading-8 text-center">{item.title}</p>
             <a
               href={item.link}
