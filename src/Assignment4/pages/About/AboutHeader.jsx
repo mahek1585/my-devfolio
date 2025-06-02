@@ -20,9 +20,11 @@ const AboutHeader = () => {
         <div className="mt-8 md:mt-0 md:w-[28rem] text-left">
           <p className="text-[1.1rem] font-bold mb-2">Bio:</p>
           <p className="text-[1rem] font-normal leading-6">
-            I'm a passionate web developer with a focus on clean, responsive designs and interactive user experiences.
-            I enjoy turning ideas into reality through code, especially using React, Tailwind CSS, and modern tools.
-            Outside of coding, I love learning new tech and solving real-world problems through digital solutions.
+            Hi, I’m a web developer who loves crafting smooth, responsive websites that not only look good but feel great to use.
+             I specialize in building interactive experiences with React and Tailwind CSS — tools I genuinely enjoy working with. 
+             Whether it’s transforming a rough idea into a polished product or diving into a new tech challenge, I’m all in.
+              When I’m not coding, you’ll probably find me exploring the latest in tech or figuring out smarter ways to solve 
+              real-life problems with code.
           </p>
         </div>
         

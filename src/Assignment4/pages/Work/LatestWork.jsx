@@ -36,7 +36,7 @@ const workItems = [
 const LatestWork = () => {
   return (
     <section className=' min-h-[455px] px-4'>
-      <h2 className="font-semibold text-[2rem] leading-12 text-center">My latest work</h2>
+      <h2 className="font-semibold text-[2rem] leading-12 text-center">What I've Been Building</h2>
 
       <div className="flex flex-col gap-10 pt-[3.8rem] sm:flex-row sm:flex-wrap sm:justify-center lg:justify-between">
         {workItems.map((item, index) => (
