@@ -30,7 +30,7 @@ const Home = () => {
     <div>
       <Header />
       <HeroSection />
-      <Logo />
+      {/* <Logo /> */}
       <SkillSection />
       
 

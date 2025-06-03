@@ -3,6 +3,7 @@ import Menu from "../../../assets/Images/Menu.png";
 import { Link as ScrollLink } from "react-scroll";
 import { useNavigate, useLocation } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
+// import logo from "../../../assets/Images/logo.jpeg";
 
 const Header = () => {
   const [navlist] = useState([
@@ -62,6 +63,7 @@ const Header = () => {
     <header className="flex justify-between px-12 py-6 sticky top-0 bg-white">
       <ScrollToTop />
       <div className="brand font-semibold text-xl">Logo</div>
+      {/* <img src={logo} alt="Logo" className="h-10 w-auto object-contain" /> */}
       <nav>
         <ul className={`${navlistClassName} hidden md:flex gap-12`}>
           {navlist.map(({ id, name, link }) => (

@@ -1,10 +1,6 @@
 import React from "react";
-
-import vector1 from "../../../assets/Images/vector1.png"
- import vector2 from "../../../assets/Images/vector2.png"
- import vector3 from "../../../assets/Images/Vector3.png"
-import vector4 from "../../../assets/Images/vector4.png"
- import Be from "../../../assets/Images/Behance.png"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faInstagram, faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 const Footer = () => {
@@ -18,12 +14,29 @@ const Footer = () => {
             Whether it's web development or design, feel free to reach out and let's build something great together.
 
           </p>
-           <div className="flex gap-4">
-                     <img src={vector1} className="w-9 h-9 cursor-pointer" alt="vector1" />
-                     <img src={vector2} className="w-9 h-9 cursor-pointer" alt="vector2" /> 
-                     <img src={vector3} className="w-9 h-9 cursor-pointer" alt="vector3" />
-                     <img src={vector4} className="w-9 h-9 cursor-pointer" alt="vector4" /> 
-                     <img src={Be} className="w-9 h-9 cursor-pointer" alt="vector5" /> 
+           <div className="flex gap-4 text-4xl">
+                      <a
+                        href="https://www.linkedin.com/in/mahekshaikh26"
+                        target="_blank"
+                        className="text-gray-700 hover:text-blue-600"
+                      >
+                        <FontAwesomeIcon icon={faLinkedin} />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/mahekshaikh8877?igsh=MXdod3NoOHZrN2cyMw=="
+                        target="_blank"
+                        className="text-gray-700 hover:text-pink-500"
+                      >
+                        <FontAwesomeIcon icon={faInstagram} />
+                      </a>
+                      <a
+                        href="https://github.com/mahek1585"
+                        target="_blank"
+                        className="text-gray-700 hover:text-black"
+                      >
+                         <FontAwesomeIcon icon={faGithub} />
+                     </a>
+                    
                  </div>
         </div>
         <form className="flex flex-1 items-start md:min-w-[32rem]">
@@ -59,7 +72,5 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
 
 

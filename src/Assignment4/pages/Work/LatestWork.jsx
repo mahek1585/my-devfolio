@@ -1,6 +1,6 @@
 import React from 'react';
 import grocerry from "../../../assets/Images/grocerry.png";
-import pokemon from "../../../assets/Images/pokemon.png";
+import pokemon from "../../../assets/Images/pokemon.jpeg";
 import clickcount from "../../../assets/Images/clickcount.png";
 import chefs from "../../../assets/Images/chefs-delight2.png";
 import amazon from "../../../assets/Images/amazon.png";
@@ -12,7 +12,7 @@ const workItems = [
     link: "https://github.com/mahek1585/FirstReact-App/tree/assignment2" 
   },
   { image: pokemon, 
-    title: "Pokemon Website", 
+    title: "Pokemon API", 
     reponame: "Pokemon" ,
     link : "https://github.com/mahek1585/React-Projects/tree/Pokemon/src "
   },
@@ -41,7 +41,7 @@ const LatestWork = () => {
       <div className="flex flex-col gap-10 pt-[3.8rem] sm:flex-row sm:flex-wrap sm:justify-center lg:justify-between">
         {workItems.map((item, index) => (
           <div key={index} className="w-[19rem] h-[25.4rem] mx-auto">
-            <img src={item.image} alt={item.title} className="h-[315px] mx-auto w-full object-cover" />
+            <img src={item.image} alt={item.title} className="h-[315px] mx-auto w-full object-contain" />
             <p className="text-[1.3rem] font-semibold pt-6 leading-8 text-center">{item.title}</p>
             <a
               href={item.link}
