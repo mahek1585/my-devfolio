@@ -2,10 +2,10 @@
 import React from "react";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Assignment4/pages/Home/Home";
-import About from "./Assignment4/pages/About/About";
-import Work from "./Assignment4/pages/Work/Work";
-import Contact from "./Assignment4/pages/Contact/Contact";
+import Home from "./portfolio/pages/Home/Home";
+import About from "./portfolio/pages/About/About";
+import Work from "./portfolio/pages/Work/Work";
+import Contact from "./portfolio/pages/Contact/Contact";
 
 
 
