@@ -9,22 +9,22 @@ const workItems = [
   { image: grocerry, 
     title: "Apni Grocerry App", 
     reponame: "Apni Grocerry",
-    link: "https://github.com/mahek1585/FirstReact-App/tree/assignment2" 
+    link: "https://github.com/mahek1585/Grocerry" 
   },
   { image: pokemon, 
     title: "Pokemon API", 
     reponame: "Pokemon" ,
-    link : "https://github.com/mahek1585/React-Projects/tree/Pokemon/src "
+    link : "https://github.com/mahek1585/Pokemon"
   },
   { image: clickcount, 
     title: "ClickCount Application",
     reponame: "ClickCount",
-    link: "https://github.com/mahek1585/React-Projects/tree/assignment3"
+    link: "https://github.com/mahek1585/ClickCount-Applications"
     },
   { image: chefs, 
     title: "Chef's Delight",
     reponame:"FoodieHub", 
-    link: "https://github.com/mahek1585/TailwindDemo/tree/MahekFe/src" 
+    link: "https://github.com/mahek1585/FoodieHub" 
   },
    { image: amazon, 
     title: "Amazon Home page",
