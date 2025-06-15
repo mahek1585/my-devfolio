@@ -36,7 +36,7 @@ const Home = () => {
 
       <Element name="work">
         <LatestWork />
-        <Client />
+        {/* <Client /> */}
       </Element>
 
       <Element name="contact">
