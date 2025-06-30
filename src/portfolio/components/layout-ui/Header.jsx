@@ -1,5 +1,8 @@
+
+
+
 import React, { useState } from "react";
-import Menu from "../../../assets/Images/Menu.png";
+import MenuIcon from "../../../assets/Images/Menu.png";
 import { Link as ScrollLink } from "react-scroll";
 import { useNavigate, useLocation } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
@@ -16,14 +19,7 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const showToggler = () => {
-    setShow(!show);
-  };
-
-  const navlistClassName = show
-    ? `!flex flex-col justify-center items-center text-xl bg-amber-50 fixed left-0 top-0 w-full h-full
-        md:flex-row md:relative md:bg-transparent`
-    : "hidden";
+  const handleToggle = () => setShow(!show);
 
   const NavItem = ({ name, link }) => {
     const handleClick = () => {
@@ -34,10 +30,12 @@ const Header = () => {
           navigate("/", { state: { scrollTo: link } });
         }
       }
+      setShow(false); // Close menu on click
     };
 
+
     return (
-      <li className="cursor-pointer hover:underline">
+      <li className= "cursor-pointer hover:text-[#009379] transition-all duration-200 font-medium text-[1rem]">
         {name === "About" ? (
           <span onClick={handleClick}>{name}</span>
         ) : location.pathname === "/" ? (
@@ -47,6 +45,7 @@ const Header = () => {
             smooth={true}
             offset={-80}
             duration={500}
+            onClick={() => setShow(false)}
           >
             {name}
           </ScrollLink>
@@ -59,37 +58,44 @@ const Header = () => {
 
   return (
     <>
-    <div className="overflow-x-hidden">
-    <header className="flex justify-between px-12 py-6 sticky top-0 bg-white">
       <ScrollToTop />
-      {/* <div className="brand font-semibold text-xl">Logo</div> */}
-      <img src={logo} alt="Logo" className="h-20 w-auto object-contain" />
-      <nav>
-        <ul className={`${navlistClassName} hidden md:flex gap-12`}>
-          {navlist.map(({ id, name, link }) => (
-            <NavItem key={id} name={name} link={link} />
-          ))}
-          <p
-            onClick={showToggler}
-            className="md:hidden cursor-pointer hover:underline font-medium bg-slate-900 py-2 px-3 text-white"
+      <header className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-4 py-4 md:px-8">
+          <img src={logo} alt="Logo" className="h-16 w-auto object-contain" />
+
+          {/* Desktop Nav */}
+          <ul className="hidden md:flex gap-10 font-medium text-gray-700">
+            {navlist.map(({ id, name, link }) => (
+              <NavItem key={id} name={name} link={link} />
+            ))}
+          </ul>
+
+          {/* Mobile Hamburger */}
+          <button
+            className="md:hidden focus:outline-none"
+            onClick={handleToggle}
           >
-            Go Back
-          </p>
-        </ul>
-      </nav>
-      <img
-        onClick={showToggler}
-        src={Menu}
-        className="h-6 w-6 md:hidden"
-        alt="Menu"
-      />
-    </header>
-    </div>
+            <img src={MenuIcon} alt="Menu" className="h-6 w-6" />
+          </button>
+        </div>
+
+        {/* Mobile Overlay Nav */}
+        {show && (
+          <div className="md:hidden fixed inset-0 bg-white flex flex-col items-center justify-center gap-8 text-xl font-semibold text-gray-800 transition-all duration-300 ease-in-out">
+            {navlist.map(({ id, name, link }) => (
+              <NavItem key={id} name={name} link={link} />
+            ))}
+            <button
+              onClick={handleToggle}
+              className="mt-4 px-4 py-2 bg-black text-white rounded"
+            >
+              Close
+            </button>
+          </div>
+        )}
+      </header>
     </>
   );
 };
 
 export default Header;
-
-
-

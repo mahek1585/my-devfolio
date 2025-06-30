@@ -1,58 +1,58 @@
 
-import React from "react";
 
+
+
+
+import React, { useEffect, useState } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+// Pages
 import Home from "./portfolio/pages/Home/Home";
 import About from "./portfolio/pages/About/About";
 import Work from "./portfolio/pages/Work/Work";
 import Contact from "./portfolio/pages/Contact/Contact";
-
-
+import SplashScreen from "./portfolio/SplashScreen";
 
 
 const App = () => {
-  // todo: Add Not Found Page
+  const [splashLoading, setSplashLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setSplashLoading(false);
+    }, 3000); // Show splash for 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
+
   const router = createBrowserRouter([
-   
     {
       path: "/",
-      element: <Home/>,
+      element: <Home />,
     },
     {
       path: "/About",
-      element: <About/>,
+      element: <About />,
     },
     {
       path: "/Work",
-      element: <Work/>,
+      element: <Work />,
     },
-     {
+    {
       path: "/Contact",
-      element: <Contact/>,
+      element: <Contact />,
     },
-   
-    
   ]);
 
   return (
     <div className="max-w-[1900px] mx-auto">
      
-      <RouterProvider router={router} />
+      <SplashScreen splashLoading={splashLoading} />
+      {!splashLoading && <RouterProvider router={router} />}
     </div>
   );
 };
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
 
 

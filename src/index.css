@@ -11,6 +11,6 @@ body {
 }
 section {
   @apply px-7 md:px-24;
-  @apply mb-12;
-  @apply min-h-[34rem];
+  /* @apply mb-12;
+  @apply min-h-[34rem]; */
 }

@@ -1,10 +1,11 @@
+
+
+
 import React from 'react';
 import htmlIcon from "../../../assets/Images/html.png";
 import jsIcon from "../../../assets/Images/javascript.png";
 import reactIcon from "../../../assets/Images/react.png";
 import tailwindIcon from "../../../assets/Images/tailwindcss.png";
-
-
 
 const skills = [
   {
@@ -29,17 +30,37 @@ const skills = [
   }
 ];
 
-
-
 const SkillSection = () => {
   return (
-    <section className="mx-auto px-6 sm:px-[4rem] py-12 min-h-[688px]">
-      <div className="flex flex-col items-center gap-12 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-x-[100px] sm:gap-y-16 sm:px-[140px]">
+    <section className="py-20 px-6 md:px-24 bg-gradient-to-b from-[#fdfbfb] to-[#f3f4f6]">
+      <div className="text-center mb-14">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 tracking-tight">
+          My Technical Skills
+        </h2>
+        <p className="text-gray-600 mt-4 max-w-xl mx-auto">
+          A quick overview of the tools and technologies I use to bring ideas to life.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 max-w-6xl mx-auto">
         {skills.map((item, index) => (
-          <div key={index} className="w-[249px] h-[328px] flex flex-col items-center text-center">
-            <img src={item.image} alt={item.title} className="w-32 h-32 mx-auto" />
-            <h3 className="font-semibold leading-10 text-2xl text-[#2D2D2D] pt-[3.5rem]">{item.title}</h3>
-            <p className="text-[1rem] leading-[1.6rem] font-normal h-[81px] text-[#2D2D2D]">{item.description}</p>
+          <div
+            key={index}
+            className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 flex flex-col items-center text-center p-6 border border-gray-200"
+          >
+            <div className="w-24 h-24 bg-gray-100 rounded-full flex items-center justify-center mb-5">
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-16 h-16 object-contain"
+              />
+            </div>
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              {item.title}
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>

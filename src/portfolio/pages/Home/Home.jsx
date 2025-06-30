@@ -15,16 +15,31 @@ const Home = () => {
   const location = useLocation();
 
  
+  // useEffect(() => {
+  //   if (location.state?.scrollTo) {
+  //     scroller.scrollTo(location.state.scrollTo, {
+  //       duration: 800,
+  //       delay: 0,
+  //       smooth: 'easeInOutQuart',
+  //       offset: -80, 
+  //     });
+  //   }
+  // }, [location.state]);
+
+
   useEffect(() => {
-    if (location.state?.scrollTo) {
-      scroller.scrollTo(location.state.scrollTo, {
-        duration: 800,
-        delay: 0,
-        smooth: 'easeInOutQuart',
-        offset: -80, 
-      });
-    }
-  }, [location.state]);
+  if (location.state?.scrollTo) {
+    scroller.scrollTo(location.state.scrollTo, {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+      offset: -80,
+    });
+
+    // Clear the scroll state after scrolling once
+    window.history.replaceState({}, document.title);
+  }
+}, [location.state]);
 
   return (
     <div>
